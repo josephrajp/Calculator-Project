@@ -88,7 +88,7 @@ p {
     left: 22%;
 }
 
-footer {
+#footer {
     display: none;
 }
 
@@ -101,6 +101,7 @@ footer {
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         box-shadow: 0 0 25PX #555;
     }
@@ -120,11 +121,12 @@ footer {
     .oper:active {
         background-color: #DB8337;
     }
-    footer {
+    #footer {
         display: block;
         position: absolute;
         bottom: 0;
         left: 50%;
+        -webkit-transform: translate(-50%);
         transform: translate(-50%);
         padding-bottom: 1%;
     }
