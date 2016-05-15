@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+#result-pane {
+    background-color: #424242;
+    color: #fff;
+    height: 25%;
+    font-size: 250%;
+    text-align: right;
+    letter-spacing: 3px;
+}
+
+#result-pane div {
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#result {
+    padding-top: 20%;
+    overflow: hidden;
+    font-size: 79%;
+}
+
+.wrapper {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.num-row {
+    height: 15%;
+    text-align: center;
+    font-size: 130%;
+    border-bottom: 1px solid #909090;
+}
+
+.num-row:last-child {
+    border: none;
+}
+
+.num-block {
+    float: left;
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid #909090;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.num-block:hover {
+    background-color: #e8e8e8;
+}
+
+.num-block:last-child {
+    border-right: none;
+}
+
+.button {
+    position: relative;
+    top: 36%;
+}
+
+.oper {
+    background-color: #f5923e;
+    color: #fff;
+    font-size: 120%;
+}
+
+.oper:hover {
+    background-color: #e88b3a;
+}
+
+#zero {
+    border-right: 1px solid #909090;
+    width: 50%;
+    position: relative;
+}
+
+#zero .button {
+    position: absolute;
+    left: 22%;
+}
+
+footer {
+    display: none;
+}
+
+@media only screen and (min-width:361px) and (min-height: 600px) {
+    .container {
+        width: 360px;
+        height: 600px;
+        margin: auto;
+        border: 1px solid black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 25PX #555;
+    }
+    .wrapper {
+        height: 100vh;
+        position: relative;
+    }
+    #result-pane {
+        height: 148px;
+    }
+    .num-row {
+        height: 90px;
+    }
+    .num-block:active {
+        background-color: #DBDBDB;
+    }
+    .oper:active {
+        background-color: #DB8337;
+    }
+    footer {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        padding-bottom: 1%;
+    }
+}
