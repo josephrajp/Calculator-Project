@@ -24,7 +24,9 @@ $(document).on({
                 clickedBtn = "×";
             } else if (pressed === "/") {
                 clickedBtn = "÷";
-            } else {
+            }else if(pressed === "-"){
+                clickedBtn="−"
+            }else {
                 clickedBtn = pressed;
             }
             //clickedBtn = $(clickedBtn).text().trim();
