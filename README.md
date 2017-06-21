@@ -1,4 +1,4 @@
 # Calculator-Project
 Calculator - HTML, CSS, jQuery, Javascript
 
-url: [Project - calculaltor] (http://josephrajp.github.io/Project-calculator/)
+url: [Project - calculaltor] (http://pjosephraj.github.io/Project-calculator/)
